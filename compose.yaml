@@ -1,0 +1,17 @@
+services:
+  project-graveyard:
+    build:
+      context: .
+    image: project-graveyard:latest
+    restart: unless-stopped
+    init: true
+    ports:
+      - "${PROJECT_GRAVEYARD_PORT:-8000}:8000"
+    environment:
+      PROJECT_GRAVEYARD_DATABASE_PATH: /data/project_graveyard.db
+    volumes:
+      - project-graveyard-data:/data
+
+volumes:
+  project-graveyard-data:
+
