@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/screenshots/overview.png" alt="Project Graveyard Overview" width="800">
+</p>
+
 # Project Graveyard
 
 Project Graveyard is a small, local, single-user application for keeping track of coding projects that are active, paused, abandoned, or completed. It uses FastAPI and SQLite for the local API and React with Vite for the interface.
